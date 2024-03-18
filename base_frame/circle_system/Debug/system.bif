@@ -1,0 +1,7 @@
+/*circle_led_wrapper*/
+the_ROM_image:
+{
+ [bootloader] <circle_led_wrapper/boot/fsbl.elf>
+ <bitstream>
+ <elf,ps7_cortexa9_0>
+}

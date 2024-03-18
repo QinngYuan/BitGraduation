@@ -1,0 +1,10 @@
+2024-03-18T23:13:45.471903100255-23:13:45 **** Incremental Build of configuration Debug for project circle_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 14828 E:/zedboard_experiment/circle_led/circle_led_wrapper/export/circle_led_wrapper/circle_led_wrapper.xpfm standalone_ps7_cortexa9_0 E:/zedboard_experiment/circle_led/circle_system/Debug/system.bif
+000-sdcard_gen --xpfm E:/zedboard_experiment/circle_led/circle_led_wrapper/export/circle_led_wrapper/circle_led_wrapper.xpfm --sys_config circle_led_wrapper --bif E:/zedboard_experiment/circle_led/circle_system/Debug/system.bif --bitstream E:/zedboard_experiment/circle_led/circle/_ide/bitstream/circle_led_wrapper.bit --elf E:/zedboard_experiment/circle_led/circle/Debug/circle.elf,ps7_cortexa9_0
+000-creating BOOT.BIN using E:/zedboard_experiment/circle_led/circle/_ide/bitstream/circle_led_wrapper.bit
+000-Running E:/xilinx/Vitis/2022.2/bin/bootgen  -image E:/zedboard_experiment/circle_led/circle_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+23:13:51 Build Finished (took 5s.909ms)
+
