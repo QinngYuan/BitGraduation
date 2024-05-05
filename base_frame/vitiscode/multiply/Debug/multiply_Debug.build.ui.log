@@ -1,0 +1,39 @@
+2024-05-05T12:33:05.602174100255-12:33:05 **** Incremental Build of configuration Debug for project multiply ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/main.cc'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+000-In file included from ../src/syscall_add.h:1,
+000-                 from ../src/main.cc:1:
+000/multiply/src/headers.h41-1-1#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]1-../src/headers.h:41:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+000-   41 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+000-      |  ^~~~~~~
+000-../src/main.cc: In function 'int multiply(u64*, u64*)':
+000/multiply/src/main.cc62-1-1no return statement in function returning non-void [-Wreturn-type]1-../src/main.cc:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
+000-   62 | }
+000-      | ^
+000-In file included from ../src/main.cc:1:
+000-../src/syscall_add.h: In function 'int call_fpga(u64*, u64*)':
+000/multiply/src/syscall_add.h31-1-1control reaches end of non-void function [-Wreturn-type]1-../src/syscall_add.h:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+000-   31 | }
+000-      | ^
+000-'Finished building: ../src/main.cc'
+000-' '
+000-'Building target: multiply.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "multiply.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: multiply.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size multiply.elf  |tee "multiply.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  41529	  10440	  69600	 121569	  1dae1	multiply.elf
+000-'Finished building: multiply.elf.size'
+000-' '
+00255-
+12:33:06 Build Finished (took 805ms)
+
