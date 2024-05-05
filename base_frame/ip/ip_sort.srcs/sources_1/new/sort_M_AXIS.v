@@ -23,12 +23,12 @@
 module sort_M_AXIS#
 (
     parameter integer C_M_AXIS_TDATA_WIDTH	= 128,
-	parameter integer C_M_START_COUNT	= 16
+	parameter integer C_M_START_COUNT	= 1
  )
 (
     input wire res_fifo_valid,
         output reg res_fifo_rd_en,
-        input wire [31:0] res_fifo_outdata,
+        input wire [127:0] res_fifo_outdata,
 
 		input wire  M_AXIS_ACLK,
 		input wire  M_AXIS_ARESETN,
@@ -38,7 +38,7 @@ module sort_M_AXIS#
 		output wire  M_AXIS_TLAST,
 		input wire  M_AXIS_TREADY
 );
-    localparam NUMBER_OF_OUTPUT_WORDS = 16;                                               
+    localparam NUMBER_OF_OUTPUT_WORDS = 4;                                               
 	                                                                                     
 	// function called clogb2 that returns an integer which has the                      
 	// value of the ceiling of the log base 2.                                           

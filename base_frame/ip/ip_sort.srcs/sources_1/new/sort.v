@@ -5,7 +5,7 @@ module sort #
     parameter integer C_S_AXIS_TDATA_WIDTH	= 128,
 
 	parameter integer C_M_AXIS_TDATA_WIDTH	= 128,
-	parameter integer C_M_AXIS_START_COUNT	= 16
+	parameter integer C_M_AXIS_START_COUNT	= 64
 )
 (
     input wire  aclk,
@@ -25,7 +25,7 @@ module sort #
     );
     wire res_fifo_valid;
     wire res_fifo_rd_en;
-    wire [31:0] res_fifo_outdata;
+    wire [127:0] res_fifo_outdata;
         
 // Instantiation of Axi Bus Interface S_AXIS
 	sort_S_AXIS # ( 

@@ -8,7 +8,7 @@ module multiply_M_AXIS #
  
  )
 (
-    input wire res_fifo_valid,
+        input wire res_fifo_valid,
         output reg res_fifo_rd_en,
         input wire [31:0] res_fifo_outdata,
 

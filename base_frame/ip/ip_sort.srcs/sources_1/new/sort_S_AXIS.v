@@ -7,7 +7,7 @@ module sort_S_AXIS#
 (
     output wire res_fifo_valid,
     input wire res_fifo_rd_en,
-    output wire [31:0] res_fifo_outdata,
+    output wire [127:0] res_fifo_outdata,
     
     input wire  S_AXIS_ACLK,
 
@@ -27,7 +27,7 @@ module sort_S_AXIS#
 	  end
 	endfunction
 	
-	localparam NUMBER_OF_INPUT_WORDS  = 16;
+	localparam NUMBER_OF_INPUT_WORDS  = 4;
 
 	localparam bit_num  = clogb2(NUMBER_OF_INPUT_WORDS-1);
 	

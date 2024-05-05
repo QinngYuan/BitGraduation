@@ -5,7 +5,7 @@ module multiply_myip #
 (
     parameter integer C_S_AXIS_TDATA_WIDTH	= 64,
 
-	parameter integer C_M_AXIS_TDATA_WIDTH	= 32,
+	parameter integer C_M_AXIS_TDATA_WIDTH	= 64,
 	parameter integer C_M_AXIS_START_COUNT	= 32
 )
 (

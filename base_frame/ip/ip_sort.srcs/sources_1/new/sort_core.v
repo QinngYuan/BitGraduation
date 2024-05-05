@@ -14,6 +14,7 @@ module sort_core(clk, rst, in0, in1, in2, in3, out, out_valid);
         reg  c0, c1, c2;
         reg  d0, d1, d2;
             
+        reg rst_valid = 1'b1;
         reg add_start; //该变量的作用是判断比较是否结束，比较结束后赋值为1，进入相加模块
         reg assignm_start; //该变量作用在于判断相加模块执行是否结束，结束后赋值为1，进入下一个输出模块
         //下面定义的变量用于存储上述中间变量累加结果，（9个1位2进制数相加最多4位）2的（0,1,2,3）次方的累加，那么4个1位的2进制数相加最多3位，2的（0,1,2）的累加
@@ -30,7 +31,7 @@ module sort_core(clk, rst, in0, in1, in2, in3, out, out_valid);
         //并行比较模块（第一个时钟）
         always @ (posedge clk)
             begin
-                if(rst)
+                if(rst&rst_valid)
                     begin
                         {a0, a1, a2} <= 3'b0000_0000_0;
                         {b0, b1, b2} <= 3'b0000_0000_0;
@@ -44,6 +45,7 @@ module sort_core(clk, rst, in0, in1, in2, in3, out, out_valid);
                         assignm_start <= 0;
                         out_start <= 0;
                         out_valid <= 0;
+                        rst_valid <= 0;
                     end
                 else
                     begin
@@ -78,7 +80,7 @@ module sort_core(clk, rst, in0, in1, in2, in3, out, out_valid);
                         if(in3 > in2) d2 <= 1'b1;
                         else d2 <= 1'b0;
                         
-                        
+                        rst_valid <= 0;
                         add_start <= 1; //比较结束标志，相加开始标志
                     end
             
@@ -119,6 +121,7 @@ module sort_core(clk, rst, in0, in1, in2, in3, out, out_valid);
                     out[95:64] <= out_temp[2];
                     out[127:96] <= out_temp[3];
                     out_valid <= 1;
+                    rst_valid <=1;
                 end         
         end
      
