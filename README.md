@@ -1,1 +1,7 @@
-# BitGraduation
+本仓库为本科毕业设计仓库，其中doc用来存放相关文档
+
+base_frame则包含vivado中RTL代码,block_design以及封装好的自定义ip核。
+
+其中vitiscode有着三个ip核与单通道dma连线后的通讯调试代码，以及一个多通道dma的示例代码
+
+只需要按照对应的block_design完成设计，然后导出硬件后建立对应的vitis端platform工程，然后创建对应的application工程将src中的文件导入即可进行软件调试。
