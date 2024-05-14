@@ -29,3 +29,27 @@ int call_fpga(u64 * bufin, u64 * bufout)
 		/*wait*/
 	}
 }
+
+
+int multiply(u64 * bufin, u64 * bufout)
+{
+	call_fpga(bufin,bufout);
+}
+
+int multiply_martix(u64 * bufin, u64 *bufout, int a_x, int a_y, int b_x, int b_y)
+{
+	float out[a_x][b_y];
+	float dataout[1024];
+
+
+	float mid = 0;
+	call_fpga(bufin,bufout);
+	for (int i=0; i<1024; i++)
+	{
+		memcpy(&dataout[i], &bufout[i], 4);
+	}
+	for (int i=0;i<1024;i++)
+	{
+		mid+=dataout[i];
+	}
+}

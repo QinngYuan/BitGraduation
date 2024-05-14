@@ -1,10 +1,11 @@
-src/main.o src/main.o: ../src/main.cc ../src/syscall_add.h \
- ../src/headers.h \
- E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h \
+src/main.o src/main.o: ../src/main.cc \
+ E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xtime_l.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_types.h \
- E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_printf.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xparameters.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xparameters_ps.h \
+ ../src/syscall_multiply.h ../src/headers.h \
+ E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h \
+ E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_printf.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/bspconfig.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xstatus.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_assert.h \
@@ -29,15 +30,15 @@ src/main.o src/main.o: ../src/main.cc ../src/syscall_add.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xscugic_hw.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_exception.h \
  E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_spinlock.h \
- E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/sleep.h \
- E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xtime_l.h
-../src/syscall_add.h:
-../src/headers.h:
-E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:
+ E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/sleep.h
+E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xtime_l.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_types.h:
-E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_printf.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xparameters.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xparameters_ps.h:
+../src/syscall_multiply.h:
+../src/headers.h:
+E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:
+E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_printf.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/bspconfig.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xstatus.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_assert.h:
@@ -63,4 +64,3 @@ E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_exception.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_spinlock.h:
 E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/sleep.h:
-E:/zedboard_experiment/multiply_example/multiply_wrapper/export/multiply_wrapper/sw/multiply_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xtime_l.h:
